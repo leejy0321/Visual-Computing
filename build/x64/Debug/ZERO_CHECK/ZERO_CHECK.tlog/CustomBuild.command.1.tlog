@@ -1,0 +1,10 @@
+^C:\PROJECTS\ASSIGNMENT\VC\ASSIGN 1\BUILD\CMAKEFILES\A4940815F8B9889E2A65B8E7B9ADAAA6\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Projects/Assignment/VC/assign 1" "-BC:/Projects/Assignment/VC/assign 1/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Projects/Assignment/VC/assign 1/build/Assign_1.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
