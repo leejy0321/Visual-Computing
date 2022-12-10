@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>D3 Assignment</title>
+		<script src="https://d3js.org/d3.v4.js"></script>
+		<script src="tsne.min.js"></script>
+	</head>
+	<body>
+		<script src="visualization.js"></script>
+		<br><b>Table</b>
+		<div id="table" style="overflow:auto; width:600px; height:500px;"></div>
+		<br><b>Histograms for: </b>
+		<select id="selectButton"></select>
+		<div id="histogram"></div>
+		<br><b>Parallel Coordinates<br></b>
+		<div id="parallel"></div>
+		<br><b>Scatter Plot<br></b>
+		x: 
+		<select id="selectX"></select><br>
+		y: 
+		<select id="selectY"></select><br>
+		<div id="scatter"></div>
+		<br><b>t-SNE Plot</b>
+		<br>perplexity: <input type="text" id="perplexity" size="5">
+		<br>earlyExaggeration: <input type="text" id="earlyExaggeration" size="5">
+		<br>learningRate: <input type="text" id="learningRate" size="5">
+		<br>nIter: <input type="text" id="nIter" size="5">
+		<br>metric: <select id="selectMetric"></select><br>
+		<button type="button" id="button">Update</button>
+		<div id="tsne"></div>
+	</body>
+</html>

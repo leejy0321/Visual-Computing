@@ -1,0 +1,7 @@
+chrome에서 index.html이 제대로 로드되지 않을 때 해결방법 링크:
+https://i5i5.tistory.com/935
+
+링크 내용 요약:
+chrome 검색 -> 파일 위치 열기 -> chrome 바로가기 속성 열기 -> 속성의 바로가기 탭의 대상 경로에 아래의 내용 추가 후 적용
+--disable-web-security --allow-file-access-from-files --disable-gpu --user-data-dir=~/tmp
+chrome 관리자 권한으로 실행 후 index.html 로드
